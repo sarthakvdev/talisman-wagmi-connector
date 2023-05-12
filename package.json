@@ -1,0 +1,35 @@
+{
+  "name": "@talismn/wagmi-connector",
+  "version": "0.3.0",
+  "license": "GPL-3.0-or-later",
+  "author": "TalismanSociety",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "",
+  "module": "",
+  "typings": "",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "Talisman",
+    "Wagmi",
+    "connector"
+  ],
+  "scripts": {
+    "build": "preconstruct build",
+    "prepublishOnly": "rimraf dist && preconstruct build",
+    "clean": "rimraf dist && rimraf node_modules && rimraf .turbo",
+    "publish": "npm publish"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-typescript": "^7.21.5",
+    "@preconstruct/cli": "^2.6.2",
+    "@wagmi/core": "^1.0.2",
+    "ethers": "^6.3.0",
+    "typescript": "^5.0.4"
+  }
+}
